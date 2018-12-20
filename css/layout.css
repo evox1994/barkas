@@ -303,6 +303,7 @@ input:-moz-placeholder {
 	border-radius: 100px;
 	text-align: left;
 	box-sizing: border-box;
+	white-space: nowrap;
 }
 .header-whatsup a::before {
 	content: '';
@@ -496,6 +497,9 @@ input:-moz-placeholder {
 		display: block;
 		max-width: 100%;
 	}
+	.header-whatsup a {
+		white-space: normal;
+	}
 	.header-nav ul li a {
 		font-size: 10px;
 	}
@@ -543,6 +547,9 @@ input:-moz-placeholder {
 	}
 	.header-whatsup {
 		display: none;
+	}
+	.header-whatsup a {
+		white-space: nowrap;
 	}
 	.header-phone {
 		margin-bottom: 0;
