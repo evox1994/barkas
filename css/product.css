@@ -176,3 +176,221 @@
 	float: left;
 	text-align: right;
 }
+
+.b-3 {
+	background-image: url('../i/product-fon-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.b-3 .b-block {
+	padding-top: 55px;
+	padding-bottom: 60px;
+}
+.b-3 h2 {
+	display: block;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.b-3 .phone {
+	margin-bottom: 10px;
+}
+.b-3 .phone a {
+	display: inline-block;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.b-3-img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 10px;
+}
+.b-3 .info-text {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.b-3 .info-text span {
+	text-transform: uppercase;
+	color: #96cc29;
+	font-size: 36px;
+}
+
+.b-4 .b-block {
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+.b-4 h2 {
+	display: block;
+	margin-bottom: 40px;
+	color: rgb(1, 46, 59);
+	font-weight: 700;
+	font-size: 36px;
+}
+.b-4 .catalog-slider {
+	position: relative;
+	padding: 0 30px;
+}
+.b-4 .catalog-slider .slick-arrow {
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: calc(50% - 15px);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 10;
+	background-color: transparent;
+	border: 0;
+	font-size: 0;
+}
+.b-4 .catalog-slider .slick-arrow:hover {
+	cursor: pointer;
+}
+.b-4 .catalog-slider .slick-next {
+	right: 0;
+	background-image: url('../i/arr-next-b.svg');
+}
+.b-4 .catalog-slider .slick-prev {
+	left: 0;
+	background-image: url('../i/arr-prev-b.svg');
+}
+.b-4 .catalog-slider li {
+	border: 1px solid rgb(221, 221, 221);
+	padding-top: 5px;
+	margin: 10px 15px 0;
+	position: relative;
+}
+.b-4 .catalog-slider li .image {
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 260px;
+	margin-bottom: 20px;
+}
+.b-4 .catalog-slider li .image img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.b-4 .catalog-slider .name {
+	font-size: 14px;
+	font-weight: 700;
+	color: rgb(62, 62, 62);
+	margin-bottom: 10px;
+}
+.b-4 .catalog-slider .old-price {
+	font-weight: 500;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: line-through;
+	margin-bottom: 10px;
+}
+.b-4 .catalog-slider .new-price {
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(62, 62, 62);
+	margin-bottom: 25px;
+}
+.b-4 .catalog-slider .more-btn {
+	display: block;
+	margin: 0 auto 25px;
+	width: 100%;
+	max-width: 140px;
+	padding: 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background-color: #96cc29;
+	border-radius: 100px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.b-4 .catalog-slider .cat-a {
+	display: inline-block;
+	font-weight: 500;
+	color: rgb(1, 46, 59);
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.b-4 .catalog-slider .text {
+	padding: 10px;
+	background-color: #e6f3fa;
+	box-sizing: border-box;
+	width: 100%;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgb(1, 46, 59);
+	line-height: 1.2;
+}
+.b-4 .catalog-slider .abs {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	box-sizing: border-box;
+	padding: 3px 3px 3px 30px;
+	box-shadow: 0px 1px 2.94px 0.06px rgba(0, 0, 0, 0.27);
+}
+.b-4 .catalog-slider .abs.skidka {
+	background-color: rgb(68, 183, 89);
+	max-width: 140px;
+}
+.b-4 .catalog-slider .abs.hit {
+	background-color: rgb(234, 130, 28);
+	max-width: 110px;
+	padding: 10px 3px 10px 30px;
+}
+.b-4 .catalog-slider .abs.like {
+	background-color: rgb(68, 138, 183);
+	max-width: 186px;
+}
+.b-4 .catalog-slider .abs img {
+	display: block;
+	max-width: 20px;
+	max-height: 20px;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.b-4 .catalog-slider .abs span {
+	display: block;
+	text-align: left;
+	font-weight: 500;
+	color: #ffffff;
+	font-size: 11px;
+	line-height: 1.2;
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+	.b-2-images, .b-2-info {
+		display: block;
+		padding: 0;
+		width: 100%;
+	}
+	.b-2-images img {
+		margin: 0 auto 30px;
+	}
+}
