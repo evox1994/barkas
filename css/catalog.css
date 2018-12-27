@@ -37,6 +37,9 @@
 .b-1 .nav span a {
 	color: #ffffff;
 }
+.b-1 .nav span a:hover {
+	text-decoration: underline;
+}
 .b-1 .nav span:last-child {
 	padding-right: 0;
 	margin-right: 0;
@@ -178,6 +181,13 @@
 	width: calc(33% - 34px);
 	margin: 0 15px 30px;
 	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .catalog-list li:hover {
+	box-shadow: 0 0 23px 0 rgba(0,0,0,0.1);
 }
 .b-2 .catalog-list li .image {
 	display: block;
@@ -230,6 +240,13 @@
 	border-radius: 100px;
 	font-weight: 500;
 	font-size: 14px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .catalog-list .more-btn:hover {
+	background-color: #83b323;
 }
 .b-2 .catalog-list .cat-a {
 	display: inline-block;
@@ -237,6 +254,13 @@
 	color: rgb(1, 46, 59);
 	font-size: 14px;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .catalog-list .cat-a:hover {
+	color: #96cc29;
 }
 .b-2 .catalog-list .text {
 	padding: 10px;
@@ -300,6 +324,14 @@
 	font-weight: 500;
 	font-size: 14px;
 	color: rgb(1, 46, 59);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .catalog .cat-btn:hover {
+	background-color: rgb(1, 46, 59);
+	color: #ffffff;
 }
 
 .b-3 {

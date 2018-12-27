@@ -1,9 +1,11 @@
 $(document).ready(function(){
+	
+	var HH = $('.header').outerHeight();	
 
-	/*function scrollHeader(){
+	function scrollHeader(){
 		if ( $(window).width() > 767 ) {
 			var st = $(window).scrollTop();
-			if ( st > 104 ) {
+			if ( st > HH ) {
 				$('.header').addClass('active');
 			} else {
 				$('.header').removeClass('active');
@@ -16,7 +18,7 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		scrollHeader();
-	});*/
+	});
 
 	$('.mobile-btn').click(function(){
 		if ( $(this).hasClass('active') ){
@@ -34,6 +36,26 @@ $(document).ready(function(){
 		$('.mobile-btn').removeClass('active');
 		$('.mobile-menu').removeClass('active');
 		$('body').removeClass('active');
+	});
+
+	$('.fancybox').fancybox();
+
+	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
+
+	$('input').on('input',function(){
+		$(this).removeClass('error');
+	});
+	$('textarea').on('input',function(){
+		$(this).removeClass('error');
+	});
+
+	$('.radio-btn').click(function(){
+		if ( $(this).hasClass('active') ) {
+			$(this).removeClass('active');
+		} else {
+			$(this).removeClass('error');
+			$(this).addClass('active');
+		}
 	});
 
 });

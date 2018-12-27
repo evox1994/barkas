@@ -1,0 +1,100 @@
+.b-1 .b-block {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.b-1 h1 {
+	display: block;
+	font-weight: 700;
+	color: rgb(1, 46, 59);
+	font-size: 36px;
+	line-height: 1.2;
+}
+.b-1 h1 span {
+	color: #96cc29;
+}
+
+.b-2 {
+	background-color: #e6f3fa;
+}
+.b-2 .b-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.b-2 h2 {
+	display: block;
+	font-weight: 700;
+	color: rgb(1, 46, 59);
+	line-height: 1.2;
+	font-size: 24px;
+}
+
+.b-3 .b-block {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.b-3-list li {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 255px;
+	border: 1px solid rgb(221, 221, 221);
+	margin: 0 15px 30px;
+	padding: 10px 10px 30px;
+}
+.b-3-list .image {
+	display: block;
+	height: 260px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.b-3-list .image img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.b-3-list .name {
+	font-weight: 700;
+	font-size: 14px;
+	color: rgb(62, 62, 62);
+	margin-bottom: 10px;
+}
+.b-3-list .more-btn {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 140px;
+	padding: 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background-color: #96cc29;
+	border-radius: 100px;
+	font-weight: 500;
+	font-size: 14px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3-list .more-btn:hover {
+	background-color: #83b323;
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+	.b-3-list li {
+		display: block;
+		margin: 0 auto 30px;
+	}
+}

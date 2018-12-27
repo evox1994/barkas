@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-	$('.b-1-slider').slick({
-		fade: true
-	});
-
 	$('.b-2-slider').slick({
 		arrows: false,
 		autoplay: true,
@@ -25,7 +21,7 @@ $(document).ready(function(){
 		]
 	});
 
-	$('.b-3-slider').slick({
+	$('.b-2-1-slider').slick({
 		dots: true,
 		autoplay: true,
 		fade: true

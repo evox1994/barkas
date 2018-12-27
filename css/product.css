@@ -37,6 +37,9 @@
 .b-1 .nav span a {
 	color: #ffffff;
 }
+.b-1 .nav span a:hover {
+	text-decoration: underline;
+}
 .b-1 .nav span:last-child {
 	padding-right: 0;
 	margin-right: 0;
@@ -117,6 +120,13 @@
 	font-weight: 500;
 	font-size: 14px;
 	text-align: center;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2-btn:hover {
+	background-color: #83b323;
 }
 .b-2-list li {
 	display: block;
@@ -267,6 +277,13 @@
 	padding-top: 5px;
 	margin: 10px 15px 0;
 	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4 .catalog-slider li:hover {
+	box-shadow: 0 0 23px 0 rgba(0,0,0,0.1);
 }
 .b-4 .catalog-slider li .image {
 	display: block;
@@ -319,6 +336,13 @@
 	border-radius: 100px;
 	font-weight: 500;
 	font-size: 14px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4 .catalog-slider .more-btn:hover {
+	background-color: #83b323;
 }
 .b-4 .catalog-slider .cat-a {
 	display: inline-block;
@@ -326,6 +350,13 @@
 	color: rgb(1, 46, 59);
 	font-size: 14px;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4 .catalog-slider .cat-a:hover {
+	color: #96cc29;
 }
 .b-4 .catalog-slider .text {
 	padding: 10px;
