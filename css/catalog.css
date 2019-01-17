@@ -102,6 +102,7 @@
 }
 .b-2 .filter li:hover {
 	cursor: pointer;
+	color: #96cc29;
 }
 .b-2 .filter li span {
 	text-transform: uppercase;
@@ -140,10 +141,15 @@
 	font-size: 24px;
 	line-height: 1.2;
 }
-.b-2 .info img {
+.b-2 .info .wa-a {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.b-2 .info .wa-a img {
 	display: block;
 	max-width: 100%;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 }
 .b-2 .info-text {
 	color: #ffffff;
@@ -333,6 +339,11 @@
 	background-color: rgb(1, 46, 59);
 	color: #ffffff;
 }
+.mobile-info {
+	display: none;
+	width: 255px;
+	margin: 30px auto 0;
+}
 
 .b-3 {
 	background-size: cover;
@@ -440,8 +451,11 @@
 	.b-2-filters.active {
 		left: 0;
 	}
-	.b-2 .info, .b-2-logo {
+	.b-2-filters .info, .b-2-filters .b-2-logo {
 		display: none;
+	}
+	.mobile-info {
+		display: block;
 	}
 	.b-2 .catalog {
 		display: block;

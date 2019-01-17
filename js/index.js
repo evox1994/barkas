@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
 	$('.b-1-slider').slick({
-		fade: true
+		fade: true,
+		dots: true
 	});
 
 	$('.b-2-slider').slick({
@@ -19,7 +20,7 @@ $(document).ready(function(){
 			{
 				breakpoint: 500,
 				settings: {
-					slidesToShow: 1
+					slidesToShow: 2
 				}
 			}
 		]
@@ -28,7 +29,8 @@ $(document).ready(function(){
 	$('.b-3-slider').slick({
 		dots: true,
 		autoplay: true,
-		fade: true
+		fade: true,
+		arrows: false
 	});
 
 });

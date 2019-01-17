@@ -99,11 +99,15 @@
 	position: relative;
 	background-color: rgb(245, 249, 250);
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 20px;
 	color: rgb(1, 46, 59);
 	line-height: 1.2;
 	box-sizing: border-box;
 	width: 100%;
+}
+.b-2-item span b {
+	color: #96cc29;
+	font-weight: 700;
 }
 .b-2-item::before {
 	content: '';
@@ -199,6 +203,9 @@
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 .b-2 form textarea::-webkit-input-placeholder, .b-2 form input::-webkit-input-placeholder {
 	color: rgb(1, 46, 59);
@@ -234,6 +241,9 @@
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 .b-2 form button {
 	display: block;

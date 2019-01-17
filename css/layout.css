@@ -151,8 +151,8 @@ input:-moz-placeholder {
 	width: 26px;
 	height: 22px;
 	z-index: 1;
-	top: 10px;
-	right: 10px;
+	top: 24px;
+	right: 15px;
 }
 .close-btn::after {
 	content: '';
@@ -512,6 +512,16 @@ input:-moz-placeholder {
 .footer .social-list li a {
 	display: inline-block;
 	max-width: 100%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.footer .social-list li a:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .footer .social-list li a img {
 	display: block;
@@ -603,6 +613,9 @@ input:-moz-placeholder {
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 .popup form textarea::-webkit-input-placeholder, .popup form input::-webkit-input-placeholder {
 	color: rgb(1, 46, 59);
@@ -638,6 +651,9 @@ input:-moz-placeholder {
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 .popup form button {
 	display: block;

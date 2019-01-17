@@ -215,10 +215,15 @@
 	font-weight: 700;
 	line-height: 1.2;
 }
-.b-3-img {
+.b-3 .wa-a {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+.b-3 .wa-a img {
 	display: block;
 	max-width: 100%;
-	margin: 0 auto 10px;
+	margin: 0 auto;
 }
 .b-3 .info-text {
 	font-size: 20px;

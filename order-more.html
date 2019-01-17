@@ -87,7 +87,7 @@
 	<div class="b b-1" style="background-image: url('i/order-fon.jpg');">
 		<div class="b-block">
 			<h1>Онлайн-заявка на подбор<br> <span>лодки</span></h1>
-			<a href="#и-2" class="b-1-btn">Подобрать лодку</a>
+			<a href="#steps" class="b-1-btn">Подобрать лодку</a>
 		</div>
 	</div>
 
@@ -98,7 +98,7 @@
 				<div class="progress-end"><img src="i/progress-end.png"></div>
 				<div class="progress-el"><img src="i/progress-boat.png"></div>
 			</div>
-			<div class="steps">
+			<div class="steps" id="steps">
 				<div class="step active" id="step-1" data-num="1">
 					<div class="name">Какой тип лодки Вам необходим?</div>
 					<ul>
@@ -127,6 +127,31 @@
 					</div>
 				</div>
 				<div class="step" id="step-2" data-num="2">
+					<div class="name">Какой тип лодки Вам необходим?</div>
+					<ul class="b-2-list-text">
+						<li>
+							<a href="#step-3" class="li-wrap btn-a">
+								<span>Подобрать лодку</span>
+							</a>
+						</li>
+						<li>
+							<a href="#step-3" class="li-wrap btn-a">
+								<span>Подобрать мотор</span>
+							</a>
+						</li>
+						<li>
+							<a href="#step-3" class="li-wrap btn-a">
+								<span>Подобрать запчасти на мотор</span>
+							</a>
+						</li>
+						<li><a href="#step-1" class="back-btn">Предыдущий вопрос</a></li>
+					</ul>
+					<div class="info">
+						<img src="i/info-i.png">
+						<p>Тип лодки нам необходим чтобы сузить ассортимент</p>
+					</div>
+				</div>
+				<div class="step" id="step-3" data-num="3">
 					<div class="thanks">Благодарим за ответы!</div>
 					<p class="thanks-sub">В ближайшее время наш специалист подберёт для Вас лучшие товары по заданным параметрам обработав заявку у 200 поставщиков и сообщит лучшие варианты по указаному телефону.</p>
 					<div class="form-block">

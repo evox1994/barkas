@@ -130,10 +130,15 @@
 	font-size: 24px;
 	line-height: 1.2;
 }
-.b-2 .info img {
+.b-2 .info .wa-a {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.b-2 .info .wa-a img {
 	display: block;
 	max-width: 100%;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 }
 .b-2 .info-text {
 	color: #ffffff;

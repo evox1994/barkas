@@ -41,6 +41,13 @@
 	border: 1px solid rgb(221, 221, 221);
 	margin: 0 15px 30px;
 	padding: 10px 10px 30px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3-list li:hover {
+	box-shadow: 0 0 23px 0 rgba(0,0,0,0.1);
 }
 .b-3-list .image {
 	display: block;

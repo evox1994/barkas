@@ -25,8 +25,12 @@ $(document).ready(function(){
 		var col = $('.steps .step').length;
 		var w = $('.progress-el').outerWidth();
 		var n = $('.steps .step.active').data('num');
-		var pos = (97*n)/col;
-		$('.progress-el').css('left','calc('+pos+'% - '+w+'px)');
+		if ( n > 1 ){
+			var pos = (97*(n - 1))/(col - 1);
+			$('.progress-el').css('left','calc('+pos+'% - '+w+'px)');
+		} else {
+			$('.progress-el').css('left','3%');
+		}
 	}
 
 	$('.step .btn-a').click(function(){
@@ -34,6 +38,16 @@ $(document).ready(function(){
 		$('.steps .step').removeClass('active');
 		$(el).addClass('active');
 		Progress();
+		$('html,body').animate({scrollTop: ($(el).offset().top - 60)},500);
+		return false;
+	});
+
+	$('.step .back-btn').click(function(){
+		var el = $(this).attr('href');
+		$('.steps .step').removeClass('active');
+		$(el).addClass('active');
+		Progress();
+		$('html,body').animate({scrollTop: ($(el).offset().top - 60)},500);
 		return false;
 	});
 

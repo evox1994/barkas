@@ -126,7 +126,7 @@
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.b-2order .order-btn:hover {
+.b-2-order .order-btn:hover {
 	background-color: #83b323;
 }
 .b-2 .b-block {
@@ -146,7 +146,7 @@
 	color: rgb(1, 46, 59);
 	font-size: 16px;
 	padding: 10px 30px;
-	border: 1px solid rgb(202, 202, 202);
+	border: 1px solid transparent;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -154,9 +154,11 @@
 }
 .b-2 .main-filter li:hover {
 	cursor: pointer;
+	color: #96cc29;
 }
 .b-2 .main-filter li.active {
 	color: #96cc29;
+	border-color: rgb(202, 202, 202);
 }
 .b-2 .search-wrap {
 	margin-bottom: 50px;
@@ -183,6 +185,10 @@
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 .b-2 .search-wrap form input::-webkit-input-placeholder {
 	color: rgb(102, 102, 102);
@@ -274,6 +280,7 @@
 }
 .b-2 .filter li:hover {
 	cursor: pointer;
+	color: #96cc29;
 }
 .b-2 .filter li span {
 	text-transform: uppercase;
@@ -398,6 +405,13 @@
 	color: rgb(1, 46, 59);
 	text-transform: uppercase;
 	font-weight: 500;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .filter-drop li .drop-wrap p a:hover {
+	color: #96cc29;
 }
 .b-2 .filter-drop li .drop-wrap p a img {
 	display: block;
@@ -439,10 +453,15 @@
 	font-size: 24px;
 	line-height: 1.2;
 }
-.b-2 .info img {
+.b-2 .info .wa-a {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.b-2 .info .wa-a img {
 	display: block;
 	max-width: 100%;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 }
 .b-2 .info-text {
 	color: #ffffff;
@@ -478,6 +497,13 @@
 	width: calc(33% - 34px);
 	margin: 0 15px 30px;
 	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .catalog-list li:hover {
+	box-shadow: 0 0 23px 0 rgba(0,0,0,0.1);
 }
 .b-2 .catalog-list li .image {
 	display: block;
@@ -662,6 +688,9 @@
 	margin-bottom: 25px;
 	border-bottom: 1px solid rgb(202, 202, 202);
 }
+.b-2 .catalog-list-2 li mark {
+	background-color: yellow;
+}
 .b-2 .catalog-list-2 .item-top {
 	width: 100%;
 	display: flex;
@@ -683,10 +712,28 @@
 	color: #96cc29;
 	font-size: 14px;
 }
-.b-2 .catalog-list-2 .item-top .image img {
+.b-2 .catalog-list-2 .item-top .image a {
+	display: inline-block;
+	max-width: 100%;
+}
+.b-2 .catalog-list-2 .item-top .image a img {
 	display: block;
 	max-width: 100%;
 	margin: 0 auto;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-filter: brightness(2);
+	-moz-filter: brightness(2);
+	-ms-filter: brightness(2);
+	filter: brightness(2);
+}
+.b-2 .catalog-list-2 .item-top .image a:hover img {
+	-webkit-filter: brightness(1);
+	-moz-filter: brightness(1);
+	-ms-filter: brightness(1);
+	filter: brightness(1);
 }
 .b-2 .catalog-list-2 .item-top .text {
 	font-weight: 500;
@@ -744,6 +791,11 @@
 	color: rgb(1, 46, 59);
 	font-size: 14px;
 	background-color: #e6f3fa;
+}
+.mobile-info {
+	display: none;
+	width: 255px;
+	margin: 30px auto 0;
 }
 
 .b-3 {
@@ -803,6 +855,23 @@
 	top: calc(50% - 4px);
 }
 
+.filters-btn {
+	display: none;
+	padding: 15px 20px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	z-index: 90;
+	background-color: #96cc29;
+	font-weight: 500;
+	font-size: 14px;
+	color: #ffffff;
+}
+.filters-btn.active {
+	z-index: 200;
+}
+
 
 
 
@@ -843,8 +912,25 @@
 	.b-2-filters {
 		display: block;
 		margin: 0 auto;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: -200%;
+		z-index: 200;
+		padding: 30px 10px;
+		box-sizing: border-box;
+		background-color: #ffffff;
+		overflow-y: auto;
+		height: 100vh;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		transition: all 0.3s;
 	}
-	.b-2 .info, .b-2-logo {
+	.b-2-filters.active {
+		left: 0;
+	}
+	.b-2-filters .info, .b-2-filters .b-2-logo {
 		display: none;
 	}
 	.b-2 .catalog {
@@ -855,7 +941,13 @@
 		display: block;
 		width: calc(100% - 30px);
 	}
+	.mobile-info {
+		display: block;
+	}
 	.b-3-wrap {
 		padding: 60px 10px 85px;
+	}
+	.filters-btn {
+		display: block;
 	}
 }
