@@ -33,4 +33,22 @@ $(document).ready(function(){
 		arrows: false
 	});
 
+	$('.anim-btn').mouseover(function(){
+		var img = $(this).data('img');
+
+		$('.b-1-img').addClass('anim');
+		setTimeout(function(){
+			$('.b-1-img img').attr('src',img);
+			$('.b-1-img').removeClass('anim');
+		},300);
+	});
+
+	$('.anim-btn').mouseout(function(){
+		$('.b-1-img').addClass('anim');
+		setTimeout(function(){
+			$('.b-1-img img').attr('src','i/b-1-img.png');
+			$('.b-1-img').removeClass('anim');
+		},300);
+	});
+
 });

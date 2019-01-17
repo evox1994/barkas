@@ -22,35 +22,60 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.search-wrap input').on('input',function(){
+	/*$('.search-wrap input').on('input',function(){
 		var str = $(this).val();
-		if ( str ){
+
+		$('.catalog-list-2 .image p').mark(str);
+		$('.catalog-list-2 .text').mark(str);
+		/*if ( str ){
 			$('.catalog-list-2 .image p').each(function(){
-				var str1 = $(this).text();
+				var text = $(this).find('mark').text();
+				var str1 = $(this).html();
 				var strz = '<mark>'+str+'</mark>';
+				str1 = str1.replace(RegExp('<mark>','g'),'');
+				str1 = str1.replace(RegExp('</mark>','g'),'');
 				str1 = str1.replace(RegExp(str,'g'),strz);
-				$(this).text('');
-				$(this).append(str1);
+				console.log(str1);
+				$(this).html(str1);
 			});
 			$('.catalog-list-2 .text').each(function(){
-				var str1 = $(this).text();
+				var text = $(this).find('mark').text();
+				var str1 = $(this).html();
 				var strz = '<mark>'+str+'</mark>';
+				str1 = str1.replace(RegExp('<mark>','g'),'');
+				str1 = str1.replace(RegExp('</mark>','g'),'');
 				str1 = str1.replace(RegExp(str,'g'),strz);
-				$(this).text('');
-				$(this).append(str1);
+				$(this).html(str1);
 			});
 		} else {
 			$('.catalog-list-2 .image p').each(function(){
-				var str1 = $(this).text();
-				$(this).text('');
-				$(this).append(str1);
+				var str1 = $(this).html();
+				str1 = str1.replace(RegExp('<mark>','g'),'');
+				str1 = str1.replace(RegExp('</mark>','g'),'');
+				$(this).html(str1);
 			});
 			$('.catalog-list-2 .text').each(function(){
-				var str1 = $(this).text();
-				$(this).text('');
-				$(this).append(str1);
+				var str1 = $(this).html();
+				str1 = str1.replace(RegExp('<mark>','g'),'');
+				str1 = str1.replace(RegExp('</mark>','g'),'');
+				$(this).html(str1);
 			});
-		}
-	});
+		}*/
+	//});*/
+
+	var mark = function(){
+		var keyword = $('.search-wrap input').val();
+		/*var options = {
+			'separateWordSearch': false,
+		}*/
+
+		$('.context').unmark({
+			done: function(){
+				$('.context').mark(keyword);
+			}
+		});
+	}
+
+	$('.search-wrap input').on('input',mark);
 
 });

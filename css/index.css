@@ -82,6 +82,13 @@
 	box-sizing: border-box;
 	margin-bottom: 70px;
 	padding-left: 15px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-img.anim {
+	opacity: 0;
 }
 .b-1-img img {
 	display: block;
