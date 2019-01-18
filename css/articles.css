@@ -144,8 +144,7 @@
 	transition: all 0.3s;
 }
 .b-2 .more-btn:hover {
-	background-color: rgb(1, 46, 59);
-	color: #ffffff;
+	background-color: rgba(1, 46, 59, 0.2);
 }
 
 

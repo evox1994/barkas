@@ -336,8 +336,7 @@
 	transition: all 0.3s;
 }
 .b-2 .catalog .cat-btn:hover {
-	background-color: rgb(1, 46, 59);
-	color: #ffffff;
+	background-color: rgba(1, 46, 59, 0.2);
 }
 .mobile-info {
 	display: none;
