@@ -10,7 +10,7 @@ body {
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
 	color: #000000;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-weight: 400;
 	padding-top: 154px;
 }
@@ -31,6 +31,9 @@ h1,h2,h3,h4,h5,h6{
 }
 label.error{
 	display: none !important;
+}
+input, textarea {
+	font-family: 'Montserrat';
 }
 input.error,textarea.error{
 	border: 1px solid #F00 !important;
