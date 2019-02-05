@@ -33,21 +33,30 @@ $(document).ready(function(){
 		}
 	}
 
+	$('.steps .step.active').css('opacity',1);
 	$('.step .btn-a').click(function(){
 		var el = $(this).attr('href');
-		$('.steps .step').removeClass('active');
-		$(el).addClass('active');
-		Progress();
 		$('html,body').animate({scrollTop: ($(el).offset().top - 60)},500);
+		$('.steps .step').animate({'opacity': 0}, 300);
+		setTimeout(function(){
+			$('.steps .step').removeClass('active');
+			$(el).addClass('active');
+			$(el).animate({'opacity': 1}, 300);
+			Progress();
+		},300);
 		return false;
 	});
 
 	$('.step .back-btn').click(function(){
 		var el = $(this).attr('href');
-		$('.steps .step').removeClass('active');
-		$(el).addClass('active');
-		Progress();
 		$('html,body').animate({scrollTop: ($(el).offset().top - 60)},500);
+		$('.steps .step').animate({'opacity': 0}, 300);
+		setTimeout(function(){
+			$('.steps .step').removeClass('active');
+			$(el).addClass('active');
+			$(el).animate({'opacity': 1}, 300);
+			Progress();
+		},300);
 		return false;
 	});
 
