@@ -1,5 +1,17 @@
 $(document).ready(function(){
 	
+	var ss = sessionStorage.getItem('site');
+	if ( ss ) {
+		$('.cookie').removeClass('active');
+	} else {
+		sessionStorage.setItem('site','true');
+		$('.cookie').addClass('active');
+	}
+	
+	$('.cookie-btn').click(function(){
+		$('.cookie').removeClass('active');
+	});
+
 	var HH = $('.header').outerHeight();	
 
 	function scrollHeader(){
@@ -49,7 +61,7 @@ $(document).ready(function(){
 		$(this).removeClass('error');
 	});
 
-	$('.radio-btn').click(function(){
+	$('body').on('click','.radio-btn',function(){
 		if ( $(this).hasClass('active') ) {
 			$(this).removeClass('active');
 		} else {

@@ -749,6 +749,67 @@ input:-moz-placeholder {
 	transform: rotate(-45deg);
 }
 
+.cookie {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 50;
+    background-color: #ffffff;
+    border-top: 1px solid rgb(190, 190, 190);
+}
+.cookie .b-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cookie.active {
+    display: block;
+}
+.cookie p {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.2;
+    width: auto;
+    margin: 0 10px;
+    text-align: center;
+    font-weight: 500;
+}
+.cookie p a {
+    color: #6cbbdb;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.cookie p a:hover {
+    color: #96cc29;
+}
+.cookie-btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px 40px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(102, 102, 102);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.cookie-btn:hover {
+    cursor: pointer;
+    background-color: rgb(82, 82, 82);
+}
+
 
 
 
@@ -816,6 +877,7 @@ input:-moz-placeholder {
 	}
 	.header {
 		position: fixed;
+		border-bottom: 1px solid rgb(190,190,190);
 	}
 	.header .header-nav {
 		display: none;
